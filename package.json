@@ -4,6 +4,7 @@
 	"private": true,
 	"devDependencies": {
 		"electron": "^1.7.9",
+		"foreman": "^3.0.1",
 		"react-scripts": "0.8.5"
 	},
 	"dependencies": {
@@ -17,7 +18,9 @@
 	"main": "src/electron.js",
 	"scripts": {
 		"start": "electron .",
+		"dev": "nf start",
 		"react-start": "react-scripts start",
+		"electron-start": "node src/electron-wait-react",
 		"pack": "build --dir",
 		"build": "npm run clean ; react-scripts build",
 		"build_osx": "electron-packager . App --platform=darwin --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for OSX'",
