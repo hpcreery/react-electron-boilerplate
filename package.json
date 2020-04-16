@@ -4,7 +4,6 @@
 	"private": true,
 	"devDependencies": {
 		"electron": "^1.7.9",
-		"foreman": "^2.0.0",
 		"react-scripts": "0.8.5"
 	},
 	"dependencies": {
@@ -23,7 +22,6 @@
 		"build": "npm run clean ; react-scripts build",
 		"build_osx": "electron-packager . App --platform=darwin --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for OSX'",
 		"build_linux": "electron-packager . App --platform=linux  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for LINUX'",
-		"build_win": "electron-packager . App --platform=win32  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for WIN'",
-		"postinstall": "install-app-deps"
+		"build_win": "electron-packager . App --platform=win32  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for WIN'"
 	}
 }
