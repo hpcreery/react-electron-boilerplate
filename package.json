@@ -3,12 +3,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"devDependencies": {
-		"electron": "^1.7.9",
+		"electron": "^8.2.3",
 		"foreman": "^3.0.1",
 		"react-scripts": "0.8.5"
 	},
 	"dependencies": {
-		"electron": "^1.7.9",
 		"electron-packager": "^14.2.1",
 		"react": "^16.1.1",
 		"react-dom": "^16.1.1",
