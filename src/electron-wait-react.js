@@ -13,7 +13,7 @@ const tryConnection = () =>
 			console.log('starting electron')
 			startedElectron = true
 			const exec = require('child_process').exec
-			exec('npm run start')
+			exec('npm run start-electron')
 		}
 	})
 
