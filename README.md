@@ -1,6 +1,6 @@
 # react-electron-boilerplate
 
-Very clean and simple boilerplate to creating an electron app housing electron power.
+Very clean and simple boilerplate to creating an electron app housing react power.
 
 _Only contains files necessary for getting started, ie a boilerplate._
 
