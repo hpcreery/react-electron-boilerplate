@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -17,6 +17,13 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="front-pcb">
+      <object id="front-data" style="pointer-events: none;" data="top.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div id="back-pcb">
+      <object id="back-data" style="pointer-events: none;" data="bottom.svg" type="image/svg+xml"></object>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,19 +1,25 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import { Spin, Switch, Alert } from 'antd'
+import { LoadingOutlined } from '@ant-design/icons'
 import './App.css'
+import Renderer from './components/Renderer'
+
+const fs = window.require('fs')
+const pcbStackup = require('pcb-stackup')
+//require('./components/ThreeRenderer')
+require('./dev/main')
 
 class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<div className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<h2>Welcome to The Running App</h2>
-				</div>
-				<p className="App-intro">Hello Electron!</p>
-			</div>
-		)
-	}
+  constructor(props) {
+    super(props)
+    this.state = {}
+    //three()
+  }
+
+  render() {
+    console.log('Rendering App')
+    return <div className='renderwrapper'>{/* <Renderer /> */}</div>
+  }
 }
 
 export default App
