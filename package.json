@@ -7,13 +7,12 @@
     "electron-devtools-installer": "^3.1.1",
     "electron-react-devtools": "^0.5.3",
     "foreman": "^3.0.1",
-    "react-scripts": "0.8.5"
+    "react-scripts": "4.0.0"
   },
   "dependencies": {
     "electron-packager": "^14.2.1",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-scripts": "0.8.5"
+    "react-dom": "^16.1.1"
   },
   "homepage": "./",
   "main": "src/electron.js",
@@ -27,5 +26,17 @@
     "build-osx": "electron-packager . App --platform=darwin --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for OSX'",
     "build-linux": "electron-packager . App --platform=linux  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for LINUX'",
     "build-win": "electron-packager . App --platform=win32  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for WIN'"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
