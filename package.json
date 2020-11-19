@@ -23,9 +23,9 @@
     "start-electron": "electron .",
     "pack": "build --dir",
     "build": "react-scripts build",
-    "build-osx": "electron-packager . App --platform=darwin --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for OSX'",
-    "build-linux": "electron-packager . App --platform=linux  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for LINUX'",
-    "build-win": "electron-packager . App --platform=win32  --arch=x64 --overwrite --icon=icon.ico ; echo 'Built for WIN'"
+    "build-osx": "electron-packager . App --platform=darwin --arch=x64 --overwrite --ignore=^/node_modules --icon=icon.ico ; echo 'Built for OSX'",
+    "build-linux": "electron-packager . App --platform=linux  --arch=x64 --overwrite --ignore=^/node_modules --icon=icon.ico ; echo 'Built for LINUX'",
+    "build-win": "electron-packager . App --platform=win32  --arch=x64 --overwrite --ignore=^/node_modules --icon=icon.ico ; echo 'Built for WIN'"
   },
   "browserslist": {
     "production": [
