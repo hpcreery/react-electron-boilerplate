@@ -8,10 +8,14 @@ coverage
 
 # production
 build
+App-*
 
 # misc
 .DS_Store
 .env
 npm-debug.log
 
+# project files
 .idea
+.vscode
+.git
